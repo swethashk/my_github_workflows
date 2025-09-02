@@ -1,0 +1,13 @@
+name: PR workflow
+on:
+  push:
+    branches:
+    - main
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet PR
+        run: echo "Pull request workflow triggered!"
+      - name: Print OS
+        run: uname -a
