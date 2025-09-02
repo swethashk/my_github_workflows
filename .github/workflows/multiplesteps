@@ -1,0 +1,19 @@
+name: Multi-Step Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  steps-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Step 1: Checkout done automatically by GitHub runner"
+
+      - name: Step 2
+        run: echo "Step 2: Running second command"
+
+      - name: Step 3
+        run: echo "Step 3: Finished!"
